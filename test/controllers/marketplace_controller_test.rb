@@ -1,0 +1,19 @@
+require 'test_helper'
+
+class MarketplaceControllerTest < ActionDispatch::IntegrationTest
+  test "should get index" do
+    get marketplace_index_url
+    assert_response :success
+  end
+
+  test "should get sell" do
+    get marketplace_sell_url
+    assert_response :success
+  end
+
+  test "should get buy" do
+    get marketplace_buy_url
+    assert_response :success
+  end
+
+end

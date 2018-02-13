@@ -1,1 +1,5 @@
-# juego-ethereum
+Unicorns vs Dinosaurs
+=====================
+
+
+Client app
