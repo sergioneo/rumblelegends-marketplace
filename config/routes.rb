@@ -1,13 +1,6 @@
 Rails.application.routes.draw do
 
   root to: "marketplace#index"
-  get 'character/:id', to: "character#view"
-
-  get 'marketplace', to: "marketplace#index"
-
-  get 'marketplace/sell/:id', to: "marketplace#sell"
-
-  get 'marketplace/buy/:id', to: "marketplace#buy"
 
   get 'offer/:id', to: "marketplace#offer"
 

@@ -1,3 +1,74 @@
-// Place all the styles related to the marketplace controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+div {
+	box-sizing: border-box;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.offers {
+
+	margin: 20px auto;
+	
+	.offer {
+	
+		text-align: center;
+		overflow: hidden;
+		border-radius: 10px;
+	
+		.beast_image {
+			width: 100%;
+			padding: 5px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+
+			.beast_image img {
+				max-width: 100%;
+			}
+		}
+
+		.beast_info {
+			padding: 5px;
+			text-align: left;
+
+			.seller_info {
+				width: 100%;
+				margin-bottom: 5px;
+			}
+
+			.beast_price {
+				width: 100%;
+
+				.actual_price {
+					vertical-align: middle;
+					float: left;
+				}
+
+				.btn {
+					float: right;
+					vertical-align: middle;
+				}
+			}
+		}
+	
+	}
+
+}
+
+
+.Main {
+	width: 100%;
+	padding-top: 30px;
+
+	.centered-container {
+		max-width: 1090px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.bkg-0 {background-image: image-url("beast_bkgs/0.jpg")}
+.bkg-1 {background-image: image-url("beast_bkgs/1.jpg")}
+.bkg-2 {background-image: image-url("beast_bkgs/2.jpg")}
+.bkg-3 {background-image: image-url("beast_bkgs/3.jpg")}

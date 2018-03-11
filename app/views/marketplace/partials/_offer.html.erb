@@ -1,0 +1,15 @@
+<div class="col">
+	<div class="offer">
+		<div class="beast_image bkg-<%= Integer(offer[:beast_dna])%4 %>">
+			<img src="<%= ENV["IMAGE_GENERATOR_VIEW"]+offer[:beast_dna] %>"/>
+		</div>
+		<div class="beast_info">
+			<div class="seller_info">Sold by <a href ="#">neoneoneo</a></div>
+			<div class="beast_price">
+				<div class="actual_price"><%= offer[:eth_price] %> ETH</div>
+				<a class="btn btn-info btn-sm" href="#">Buy</a>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+</div>

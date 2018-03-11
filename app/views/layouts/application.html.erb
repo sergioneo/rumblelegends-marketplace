@@ -6,9 +6,15 @@
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+
   </head>
 
   <body>
-    <%= yield %>
+  	<div id="main_menu"></div>
+    <div class="Main">
+      <%= yield %>
+    </div>
+  	<div id="footer"></div>
   </body>
 </html>

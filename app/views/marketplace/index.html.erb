@@ -1,2 +1,10 @@
-<h1>Marketplace#index</h1>
-<p>Find me in app/views/marketplace/index.html.erb</p>
+<div class="centered-container">
+	<%= render partial: "marketplace/partials/filters" %>
+	<hr>
+	<div class="offers grid-4_xs-1">
+		<% @offers.each do |offer| %>
+			<%= render partial: "marketplace/partials/offer", locals: {offer: offer} %>
+		<% end %>
+		<div class="clearfix"></div>
+	</div> <!-- .offers -->
+</div> <!-- .col-lg-12 -->

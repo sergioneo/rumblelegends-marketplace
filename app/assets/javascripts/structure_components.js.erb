@@ -1,0 +1,13 @@
+$(function() {
+
+	$.get("<%= ENV['STRUCTURE_COMPONENT'] %>menu?current=/", function(data) {
+		$("#main_menu").replaceWith(data);
+	});
+
+	// REFRESH THIS
+
+	$.get("<%= ENV['STRUCTURE_COMPONENT'] %>footer?current=/", function(data) {
+		$("#footer").replaceWith(data);
+	});
+	
+});
